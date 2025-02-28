@@ -12,3 +12,4 @@ C:\Users\vinic\OneDrive\Documentos\Estudos\ADS\ScreenSound-API\ScreenSound-API\o
 C:\Users\vinic\OneDrive\Documentos\Estudos\ADS\ScreenSound-API\ScreenSound-API\obj\Debug\net8.0\ScreenSound-API.pdb
 C:\Users\vinic\OneDrive\Documentos\Estudos\ADS\ScreenSound-API\ScreenSound-API\obj\Debug\net8.0\ScreenSound-API.genruntimeconfig.cache
 C:\Users\vinic\OneDrive\Documentos\Estudos\ADS\ScreenSound-API\ScreenSound-API\obj\Debug\net8.0\ref\ScreenSound-API.dll
+C:\Users\vinic\OneDrive\Documentos\Estudos\ADS\ScreenSound-API\ScreenSound-API\obj\Debug\net8.0\ScreenSound-API.sourcelink.json

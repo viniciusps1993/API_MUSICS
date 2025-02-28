@@ -17,7 +17,31 @@ using (HttpClient client = new HttpClient())
         //FilterByYear.YearsFilter(musics);
         //FilterByArtist.OrderByArtistList(musics);
         //FilterMusicsByOneArtist.FilterMusicOfOneArtist(musics, "A$AP Rocky");
-        FilterArtistsByGenre.FilterArtistForMusicGener(musics, "rock");
+        //FilterArtistsByGenre.FilterArtistForMusicGener(musics, "rock");
+
+
+        var myFavoritedRockSongs = new FavoritedMusics("Rock Gener");
+        myFavoritedRockSongs.AddPrefererSongs(musics[71]);
+        myFavoritedRockSongs.AddPrefererSongs(musics[31]);
+        myFavoritedRockSongs.AddPrefererSongs(musics[35]);
+        myFavoritedRockSongs.AddPrefererSongs(musics[71]);
+        myFavoritedRockSongs.AddPrefererSongs(musics[46]);
+
+        myFavoritedRockSongs.ViewFavoritedSongs();
+
+        var myFavoritedHipHopSongs = new FavoritedMusics("Hip Hop Gener");
+        myFavoritedHipHopSongs.AddPrefererSongs(musics[2]);
+        myFavoritedHipHopSongs.AddPrefererSongs(musics[5]);
+        myFavoritedHipHopSongs.AddPrefererSongs(musics[16]);
+        myFavoritedHipHopSongs.AddPrefererSongs(musics[16]);
+        myFavoritedHipHopSongs.AddPrefererSongs(musics[32]);
+
+        myFavoritedHipHopSongs.ViewFavoritedSongs();
+
+        myFavoritedHipHopSongs.buildNewJson();
+
+
+
 
     }
 

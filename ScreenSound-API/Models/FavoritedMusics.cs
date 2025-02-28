@@ -1,4 +1,6 @@
-﻿namespace ScreenSound_API.Models;
+﻿using System.Text.Json;
+
+namespace ScreenSound_API.Models;
 
 internal class FavoritedMusics
 {
@@ -18,13 +20,26 @@ internal class FavoritedMusics
 
     public void ViewFavoritedSongs()
     {
-        Console.WriteLine($"This is the favorited songs {Song}");
+        Console.WriteLine($"This is your favorite songs {Song}");
         foreach (var music in ListOfPrefererSongs)
         {
             Console.WriteLine($"{music.Name} from {music.Artist}");
         }
+        Console.WriteLine();
     }
 
-}
+    public void buildNewJson()
+    {
+        string json = JsonSerializer.Serialize(new
+        {
+            name = Song,
+            musics = ListOfPrefererSongs,
+        });
+        string jsonFile = $"musicas-favoritas-{Song}.json";
+
+        File.WriteAllText(jsonFile, json);
+        Console.WriteLine($"Json Created! {Path.GetFullPath(jsonFile)}");
+    }
+}   
 
 
