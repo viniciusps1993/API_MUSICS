@@ -1,2 +1,2 @@
 # API_MUSICS
-Projeto criado para construção de apis e pratica de metodos.
+Project created to build APIs and practice methods.
